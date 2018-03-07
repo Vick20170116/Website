@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <LangVersion>7.1</LangVersion>
+    <UserSecretsId>5146c2a4-b9e1-4ed5-9820-30abb5226a07</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="MongoDB.Driver" Version="2.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ZetaLib.AspNetCore.Forum">
+      <HintPath>..\Libs\ZetaLib.AspNetCore.Forum.dll</HintPath>
+    </Reference>
+    <Reference Include="ZetaLib.AspNetCore.Forum.MongoDB">
+      <HintPath>..\Libs\ZetaLib.AspNetCore.Forum.MongoDB.dll</HintPath>
+    </Reference>
+    <Reference Include="ZetaLib.AspNetCore.Identity.MongoDB">
+      <HintPath>..\Libs\ZetaLib.AspNetCore.Identity.MongoDB.dll</HintPath>
+    </Reference>
+    <Reference Include="ZetaLib.Database">
+      <HintPath>..\Libs\ZetaLib.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="ZetaLib.Database.MongoDB">
+      <HintPath>..\Libs\ZetaLib.Database.MongoDB.dll</HintPath>
+    </Reference>
+    <Reference Include="ZetaLib.JsonApi">
+      <HintPath>..\Libs\ZetaLib.JsonApi.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
